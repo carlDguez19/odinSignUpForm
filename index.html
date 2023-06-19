@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- css link -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- favicons -->
@@ -21,6 +22,54 @@
     <!-- maybe js -->
 </head>
 <body>
-    
+    <main>
+        <div class="sidePanel">
+            <div class="brand"></div>
+            <div class="logoName">
+                <img src="images/KBNOnewLogo.png" class="logo" alt="crossHeart">
+                <span class="name">KBNO</span>
+            </div>
+            <div class="artistCredit">Photo by <a href="https://unsplash.com/@thehmstravels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heather Shevlin</a> on <a href="https://unsplash.com/s/photos/shadow-brick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+        <div class="infoSection">
+            <section class="header">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem mollitia id quidem omnis reprehenderit eius possimus hic enim! Sed aliquam omnis iste itaque distinctio, quo sit. Id impedit pariatur odit ad quis, similique facere laboriosam numquam, dolore ut dolor optio.</p>
+                <br><p>This is a fictional company...for now</p>
+            </section>
+            <section class="formLayout">
+                <form action="#" id="odinForm">
+                    <div class="firstDiv">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="lastDiv">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                    <div class="emailDiv">
+                        <label for="email_name">EMAIL</label>
+                        <input type="email" id="email_name" required>
+                    </div>
+                    <div class="phoneDiv">
+                        <label for="phone_num">PHONE NUM</label>
+                        <input type="text" id="phone_num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
+                    </div>
+                    <div class="passDiv">
+                        <label for="passwordEnter">PASSWORD</label>
+                        <input type="password" id="passwordEnter" required>
+                    </div>
+                    <div class="passConDiv">
+                        <label for="confirm_pass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_pass" required>
+                    </div>
+                </form>
+            </section>
+            <section class="footer">
+                <button type="submit" form="odinForm">Create Account</button>
+                <br>
+                <p>Already have an account? <a href="#" class="linkIt">Log In</a></p>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

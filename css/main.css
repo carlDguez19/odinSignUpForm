@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Romavich";
+  src: url("/font/romavichregular-z8ww1.ttf");
+}
+.sidePanel {
+  background-image: url("/images/heather-shevlin-ObuGKWVUkcY-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 40vw;
+}
+.sidePanel .brand {
+  height: 200px;
+  width: 40vw;
+  background-color: #333;
+  opacity: 0.5;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+}
+.sidePanel .logoName {
+  display: flex;
+  position: absolute;
+  top: 20vh;
+  left: 20px;
+  z-index: 10;
+}
+.sidePanel .logoName img[src="images/KBNOnewLogo.png"] {
+  height: 200px;
+  width: auto;
+}
+.sidePanel .logoName .name {
+  align-self: center;
+  margin-left: 10px;
+  font-size: 150px;
+  font-family: "Romavich", sans-serif;
+}/*# sourceMappingURL=main.css.map */

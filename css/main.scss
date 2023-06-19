@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Romavich';
+    src: url("/font/romavichregular-z8ww1.ttf");
+}
+.sidePanel{
+    background-image: url("/images/heather-shevlin-ObuGKWVUkcY-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+    .brand{
+        height: 200px;
+        width: 40vw;
+        background-color: #333;
+        opacity: .5;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+    }
+    .logoName{
+        display: flex;
+        position: absolute;
+        top: 20vh;
+        left: 20px;
+        z-index: 10;
+        img[src="images/KBNOnewLogo.png"]{
+            height: 200px;
+            width: auto;
+        }
+        .name{
+            align-self: center;
+            margin-left: 10px;
+            font-size: 150px;
+            font-family: 'Romavich',sans-serif;
+        }
+    }
+    // .logo{
+    //     height: 200px;
+    //     width: auto;
+    //     position: absolute;
+    //     z-index: 10;
+    //     top: 20vh;
+    //     left: 20px;
+    // }
+
+}
