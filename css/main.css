@@ -3,11 +3,12 @@
   src: url("/font/romavichregular-z8ww1.ttf");
 }
 :root {
-  --kBlue: #2a7fff;
+  --kBlue: #2a9fff;
 }
 
 main {
   display: flex;
+  background-color: var(--kBlue);
 }
 
 .sidePanel {
@@ -62,6 +63,36 @@ main {
 
 .infoSection {
   width: 50vw;
-  margin-left: 20px;
   align-self: center;
+}
+.infoSection .header {
+  position: relative;
+  top: -20px;
+  font-family: sans-serif;
+  font-size: 14pt;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.infoSection .formLayout {
+  width: calc(60vw - 120px);
+  background: lightcyan;
+  padding: 40px 60px;
+  box-shadow: 0px 2px 5px #444;
+  z-index: 20;
+}
+.infoSection .formLayout input, .infoSection .formLayout label {
+  display: block;
+}
+.infoSection .formLayout input {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 2px #777;
+  margin-bottom: 8px;
+}
+.infoSection .formLayout label {
+  font-family: "Romavich", sans-serif;
+}
+.infoSection .formLayout .left {
+  float: left;
+  margin-right: 30px;
 }/*# sourceMappingURL=main.css.map */
