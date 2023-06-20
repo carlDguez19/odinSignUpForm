@@ -67,6 +67,8 @@ main{
     width: 50vw;
     //padding-left: 20px;
     align-self: center;//maybe??????
+    display: flex;
+    flex-direction: column;
     .header{
         position: relative;
         top: 10px;
@@ -141,6 +143,31 @@ main{
             top: 30vh;
             left: 50vw;
             transform: translateX(-50%);
+        }
+    }
+    .infoSection{
+        width: 60vw;
+        .header{
+            text-align: center;
+        }
+        .formLayout{
+            width: 60vw;
+            align-self: center;
+        }
+        .footer{
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 730px){
+    .infoSection{
+        .formLayout{
+            width: 30vw;
+            //padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

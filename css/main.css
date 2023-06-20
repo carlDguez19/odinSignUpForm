@@ -65,6 +65,8 @@ main {
 .infoSection {
   width: 50vw;
   align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 .infoSection .header {
   position: relative;
@@ -139,5 +141,27 @@ main {
     top: 30vh;
     left: 50vw;
     transform: translateX(-50%);
+  }
+  .infoSection {
+    width: 60vw;
+  }
+  .infoSection .header {
+    text-align: center;
+  }
+  .infoSection .formLayout {
+    width: 60vw;
+    align-self: center;
+  }
+  .infoSection .footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .infoSection .formLayout {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
