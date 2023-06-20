@@ -5,6 +5,7 @@
 
 :root{
     --kBlue: #2a9fff;
+    --kdarkBlue: #0000ff;
 }
 
 main{
@@ -68,7 +69,7 @@ main{
     align-self: center;//maybe??????
     .header{
         position: relative;
-        top: -20px;
+        top: 10px;
         font-family: sans-serif;
         font-size: 14pt;
         font-weight: 500;
@@ -97,4 +98,49 @@ main{
             margin-right: 30px;
         }
     }//end formLayout
+    .footer{
+        padding: 40px 20px;
+        button{
+            width: 150px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            font-size: 12pt;
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: var(--kdarkBlue);
+            color: #faf9f6;
+        }
+        p{
+            font-family: sans-serif;
+            font-weight: bold;
+            a:link{
+                color: var(--kdarkBlue);
+                text-decoration: none;
+            }
+            a:visited{
+                color: darkslateblue;
+            }
+        }
+    }
 }//end infoSection
+
+//change layout for 930px or smaller
+@media only screen and (max-width: 930px){
+    main{
+        flex-direction: column;
+    }
+    .sidePanel{
+        width: 100vw;
+        display: flex;
+        .brand{
+            top: 30vh;
+            width: 100vw;
+        }
+        .logoName{
+            top: 30vh;
+            left: 50vw;
+            transform: translateX(-50%);
+        }
+    }
+}
